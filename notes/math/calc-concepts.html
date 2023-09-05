@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<script defer src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus Concepts</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../cn-doge-favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <a href="../../index.html"><img src="../../images/mysig.png" alt="signature"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../../notes/notes-index.html">Notes</a></li>
+                <li><a href="../../misc/misc-index.html">Misc</a></li>
+            </ul>
+        </nav>
+        <a href="../../contact-me.html"><button>Contact</button></a>
+    </header>
+    <nav>
+        <div class="top-container">
+            <h2>Calculus Concepts</h2>
+        </div>
+
+
+        <div class="middle-container">
+            <p class="text-box">
+                I jest, this will be somewhat long...
+                <br>
+                <b>Limits</b> - Find out what happens to a function as you approach a certain value.
+                <br>
+                <b>Derivatives</b> - Calculating rates of change.
+                <br>
+                <b>Integration</b> - Finding the area under a curvel.
+            </p>
+
+            <p class="text-box">
+                As noted previously, Integration and Derivatives are inverse operations, this is
+                called the "Fundamental Thereom of Calculus" or so I hope.
+                <br>
+                One can think of integration as finding the antiderivative if that helps at all.
+                Now as for limits you can manipulate them algebraically when you cannot get the 
+                exact value that the limit approaches. Techniques such as difference of
+                squares, difference of cubes, or factoring in general to get around scenarios where f(whatever limit is) = DNE.
+                <br>
+                Derivatives have some nifty little rules that make your life easier when finding
+                rate of change, rules such as the power rule which essentially gives you the slope
+                of a tangent line of whatever original function. The tangent line is the line that
+                touches a curve at one point. A secant line touches a curve at two points.
+                To calculate the slope of a tangent function, you find the derivative of the function
+                at "x" point. To calculate the slop of a secant function, since you are given two points
+                which can be found via algebra: (y_2 - y_1)/(x_2- x_1). The slope of the secant line
+                gets closer to the slope of the tangent line as x gets close to whatever value;
+                limits thus are an important concept here to evaluate the slope of a tangent line.
+                The derivative is a function that gives us the slope of the tangent line at some
+                value.
+            </p>
+
+            <p class="text-box">               
+                You can estimate via the slopes of secant lines or use the limit method.                
+                <br>                
+                Example...
+                <br>         
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:mi>f</mml:mi><mml:mfenced separators="|"><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:mfenced><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msup></mml:math>
+                </math>
+                <br>
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:msup><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>'</mml:mi></mml:mrow></mml:msup><mml:mfenced separators="|"><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:mfenced><mml:mo>=</mml:mo><mml:mn>3</mml:mn><mml:msup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math>
+                </math>
+                <br>
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:mi>m</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>n</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>'</mml:mi></mml:mrow></mml:msup><mml:mfenced separators="|"><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:mfenced><mml:mo>=</mml:mo><mml:mn>3</mml:mn><mml:msup><mml:mrow><mml:mfenced separators="|"><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mn>12</mml:mn></mml:math>
+                </math>
+            </p>
+
+            <p class="text-box">
+                Using limit method to demonstrate, remember difference of cubes rule.
+
+                <br>
+                <br>
+
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:munder><mml:mrow><mml:mi>l</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:munder><mml:mfrac><mml:mrow><mml:mi>f</mml:mi><mml:mfenced separators="|"><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:mfenced><mml:mo>-</mml:mo><mml:mi>f</mml:mi><mml:mfenced separators="|"><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>-</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:munder><mml:mrow><mml:mi>l</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:munder><mml:mfrac><mml:mrow><mml:msup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msup><mml:mo>-</mml:mo><mml:mn>8</mml:mn></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>-</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mfrac></mml:math>
+                </math>
+                <br>
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:munder><mml:mrow><mml:mi>l</mml:mi><mml:mi>i</mml:mi><mml:mi>m</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:munder><mml:mfrac><mml:mrow><mml:mfenced separators="|"><mml:mrow><mml:mi>x</mml:mi><mml:mo>-</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mfenced><mml:mfenced separators="|"><mml:mrow><mml:msup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>+</mml:mo><mml:mn>2</mml:mn><mml:mi>x</mml:mi><mml:mo>+</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mfenced separators="|"><mml:mrow><mml:mi>x</mml:mi><mml:mo>-</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mfenced></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mn>12</mml:mn></mml:math>
+                </math>
+                <br>
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:mo>∫</mml:mo><mml:msup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msup><mml:mo>ⅆ</mml:mo><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup></mml:mrow><mml:mrow><mml:mi>n</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mfrac><mml:mo>+</mml:mo><mml:mi>C</mml:mi></mml:math>
+                </math>
+
+            </p>
+
+            <p class="text-box">
+                The derivative of any constant "C" would be zero (because it's a constant... try it out yourself).
+                Thus when crunching the anti-derivative, you'd inverse that too. Where derivatives are useful is that
+                you calculate rate of change, how fast something changes per unit of time. Integration helps you determine
+                how much something accumulates over a period of time (area under the curve).
+                <br>
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:mi>m</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>Δ</mml:mi><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>Δ</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:mfrac></mml:math>
+                </math>
+                versus
+                <math>
+                    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><mml:mi>A</mml:mi><mml:mo>=</mml:mo><mml:mi>x</mml:mi><mml:mi>y</mml:mi></mml:math>
+                </math>
+                Just like how multiplication and divison are opposite processes if you squeeze your two remaining braincells together
+                you big old doofus.
+                <br>
+                Definite integrals are definite, there is a "limit" in that you have upper and lower bounds.
+                Indefinite integrals give you a function instead of a number.
+            </p>
+        </div>
+
+        <div class="bottom-container">
+            <a href="https://github.com/gwythyr"><img src="../../images/GitHub-Mark-64px.png" alt="Github"></a>
+            <p class="copyright">© 2023 Gwythyr</p>
+        </div>
+</body>
+
+</html>

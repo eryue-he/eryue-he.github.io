@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latitude 5490</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../cn-doge-favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <a href="../../index.html"><img src="../../images/mysig.png" alt="signature"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../../notes/notes-index.html">Notes</a></li>
+                <li><a href="../../misc/misc-index.html">Misc</a></li>
+            </ul>
+        </nav>
+        <a href="../../contact-me.html"><button>Contact</button></a>
+    </header>
+    <nav>
+
+        <div class="top-container">
+            <h2>Latitude 5490</h2>
+        </div>
+
+        <div class="middle-container">
+            <h3></h3>
+            <p class="text-box">
+                <b>Linux Specific Configurations, Must Dos! (Debian)</b>
+                <br>
+                This laptop has some issues with power management on Linux from my experience, most notable when you close the lid or let things idle.
+                Having used Windows and Linux, I don't have any strong preference besides the need for both on baremetal
+                with different usecases. Disabling the integrated graphic's power management in grub is not ideal, however
+                it has "dealt" with the issue. Keep in mind Linux was never really a desktop OS, and depending on the device you use there can be
+                compromises like this made.
+            </p>
+
+            <pre>
+                <code>
+                    $ vim /etc/default/grub
+                    # Edit GRUB_CMDLINE_LINUX_DEFAULT=""
+                    # e.g. GRUB_CMDLINE_LINUX_DEFAULT=""quiet i915.enable_dc=0"
+                    sudo update-grub
+                </code>
+            </pre>
+
+            <p class="text-box">
+                <b>Hardware</b>
+                <br>
+                Got some hardware recently to upgrade this device, unfortunately the CPU is soldered onto
+                the motherboard. Inspite of that, the laptop is fairly repairable as long as you can scrounge
+                for parts, and is extensible due to have slots for memory and storage. Intel 7th and 8th gen series
+                are available, I opted for the 8th gen due to the quad core alongside with TPM 2.0 support,
+                having originally used Windows 11 on the laptop until fairly recently.
+            </p>
+           
+            <img src="../../images/latitude5490/inside.jpg" width="50%" height="50%" alt="latitude 5490 opened up">
+
+            <p class="text-box">
+                <b>Memory & Storage</b>
+                Keep in mind if you have a 7th gen CPU, the maximum frequency for ram is 2133MHz versus
+                2400MHz for 8th gen. In my case I opted for Hynix SODIMM DDR4 (Unregistered), product
+                code is HMA81G56AFR8N-UH from the vendor Hynix Semiconductor (Hyundai Electronics).
+                This is verified to work with 8th gen cpus on this motherboard given that I bought another
+                8GB stick to expand the amount of RAM, I have not tested other RAM since I only have DDR3 and maybe 2 for spares.
+            </p>
+
+            <img src="../../images/latitude5490/internals-bottom.jpg" width="50%" height="50%" alt="latitude 5490 internals">
+
+            <p class="text-box">Don't really have a use case for Adobe's software suite, alas what a wasted promotion for me...</p>
+            
+            <img src="../../images/latitude5490/ssd.jpg" width="50%" height="50%" alt="latitude 5490 opened up">
+
+            <p class="text-box">
+                Notice how the NVME slot, RAM slot, and battery are all serviceable? Just make sure to not
+                rip off the screws when unscrewing the bottom panel, the screws are supposed to stay on the panel,
+                they do not come off unless if something breaks!
+            </p>
+
+            <h4>BIOS</h4>
+            <img src="../../images/latitude5490/bios.jpg" width="50%" height="50%" alt="latitude 5490 internals">
+
+
+            <p class="text-box">Just make sure to follow this picture when you are installing Linux, hit F12 key and enter BIOS,
+                afterwards follow along this image to switch the SATA operation mode to AHCI to support the NVME
+                drive. (Open image in new tab to enlarge). Menu: System Configuration > Sata Operation > AHCI.
+            </p>
+
+        </div>
+
+        <div class="bottom-container">
+            <a href="https://github.com/gwythyr"><img src="../../images/GitHub-Mark-64px.png" alt="Github"></a>
+            <p class="copyright">© 2023 Gwythyr</p>
+        </div>
+
+</body>
+
+</html>
